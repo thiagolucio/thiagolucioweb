@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: bold;
+}
+
+h2,h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+
+/* AVATAR  */
+
+.avatar-front-end,
+.avatar-designer {
+  width: 180px;
+  height: 180px;
+  margin-top: 100px;
+}
+
+.avatar-front-end {
+  background-image: url(https://thiagolucio.com.br/firstAvatar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.avatar-front-end:hover,
+.avatar-designer:hover {
+  cursor: pointer;
+  -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition: all ease 0.2s;
+}
+
+.avatar-front-end:hover {
+  background-image: url(https://thiagolucio.com.br/secondAvatar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.avatar-front-end,
+.avatar-designer {
+  padding: 30px;
+}
+
+
+.avatar-designer {
+  background-image: url(https://thiagolucio.com.br/secondAvatar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.avatar-designer:hover {
+  background-image: url(https://thiagolucio.com.br/firstAvatar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.img-brand-cv {
+  max-width: 100px;
+  height: auto;
+}
+
+.iconRedesSociais {
+  width: 40px;
+  height: auto;
+}
+
+.iconRedesSociais + :last-child {
+  margin-right: 30px;
+}
+
+.iconRedesSociais:hover {
+  box-shadow: rgba(10, 102, 194, 0.4) 0px 5px,
+    rgba(10, 102, 194, 0.3) 0px 10px, rgba(10, 102, 194, 0.2) 0px 15px,
+    rgba(10, 102, 194, 0.1) 0px 20px, rgba(10, 102, 194, 0.05) 0px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
