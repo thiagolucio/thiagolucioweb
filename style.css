@@ -101,6 +101,19 @@ h2,h3, h4, h5, h6 {
   animation: rotate-scale-up 0.65s linear both;
 }
 
+
+#carouselExampleIndicators {
+  max-width: 585px;
+  height: 366px;
+}
+
+.carousel-item img {
+  max-width: 585px;
+  height: 366px;
+}
+
+
+
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
