@@ -11,6 +11,7 @@ body {
 }
 
 h1 {
+  padding: 16px 0;
   font-family: "Sedgwick Ave", cursive;
   font-weight: bold;
 }
@@ -21,16 +22,14 @@ h2,h3, h4, h5, h6 {
 
 
 /* AVATAR  */
-
 .avatar-front-end,
 .avatar-designer {
   width: 180px;
   height: 180px;
-  margin-top: 100px;
 }
 
 .avatar-front-end {
-  background-image: url(https://thiagolucio.com.br/firstAvatar.png);
+  background-image: url('img/firstAvatar.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -46,34 +45,35 @@ h2,h3, h4, h5, h6 {
 }
 
 .avatar-front-end:hover {
-  background-image: url(https://thiagolucio.com.br/secondAvatar.png);
+  background-image: url('img/secondAvatar.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
+
 .avatar-front-end,
 .avatar-designer {
   padding: 30px;
 }
 
-
 .avatar-designer {
-  background-image: url(https://thiagolucio.com.br/secondAvatar.png);
+  background-image: url('img/secondAvatar.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 
 .avatar-designer:hover {
-  background-image: url(https://thiagolucio.com.br/firstAvatar.png);
+  background-image: url('img/firstAvatar.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 
-.img-brand-cv{
+.img-brand-cv {
   max-width: 120px;
   height: auto;
+  margin: 0 16px;
 }
 
 .iconRedesSociais {
@@ -94,25 +94,75 @@ h2,h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out;
 }
 
+.container-content {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100%;
+}
 
-/* animação rotacional em escala */
+.container-left, 
+.container-right {
+  width: 50%;
+  min-height: 100%;
+  flex-wrap: nowrap;
+  padding: 30px;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.container-right {
+  background: #333333;
+  color: white;
+}
+
+h2 small {
+  font-size: 12px!important;
+}
+
 .rotate-scale-up {
   -webkit-animation: rotate-scale-up 0.65s linear both;
   animation: rotate-scale-up 0.65s linear both;
 }
 
-
-#carouselExampleIndicators {
-  max-width: 585px;
-  height: 366px;
+.tag-cloud {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  font-family: Arial;
+  border-radius: 25px;
+  background-color: #0f75c9;
+  margin-top: 8px;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
 }
 
-.carousel-item img {
-  max-width: 585px;
-  height: 366px;
+
+
+
+
+
+
+@media(max-width: 1024px) {
+  .container-content {
+      flex-direction: column;
+  }
+  .container-left, .container-right {
+      width: 100%;
+  }
+  .img-brand-cv {
+    display: none;
+  }
+  
 }
-
-
 
 @-webkit-keyframes rotate-scale-up {
   0% {
